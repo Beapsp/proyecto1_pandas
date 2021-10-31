@@ -1,5 +1,25 @@
 #Aquí solo voy a meter las funciones que vaya utilizar
+def sustitucion(s,b):
+
+    """
+    Con esta función conseguiré que todos los valores de s que estén en b,
+    me aparezcan en la lista b como Unknown.
+     
+    """
+    for i,p in enumerate(s):
+        if p in b:
+            b[i]="Unknown"
+        return b
+
+
+
 def mes (x):
+
+    """
+    Con esta función filtaré la columna Date, para que en cualquier valor que figure un mes
+    me indique solamente dicho mes y ningún dato más
+    
+    """
     for i in x:
         if "Jan" in x:
             return "January"
@@ -27,3 +47,5 @@ def mes (x):
             return "December"
         else:
             return "Other"
+
+
