@@ -8,7 +8,7 @@ def sustitucion(s,b):
     """
     for i,p in enumerate(s):
         if p in b:
-            b[i]="Unknown"
+            b[i]="Other"
         return b
 
 
